@@ -1,0 +1,52 @@
+@import "../mixins.scss";
+
+.background {
+  background-image: url("./img/top-background.jpg");
+  background-repeat: no-repeat;
+  @include respond-to("medium") {
+    max-height: 55.5rem;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: center;
+    @include pfontz("Montserrat", 3rem, #ffffff, 900, 100%);
+    @include respond-to("medium") {
+      max-width: 110.8rem;
+    }
+    .title-text {
+      padding: 4rem 0;
+      text-align: center;
+      @include respond-to("small") {
+        padding: 5rem 0;
+      }
+      @include respond-to("medium") {
+        padding: 20.6rem 0;
+      }
+      .title-h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+
+        @include respond-to("medium") {
+          font-size: 2.5rem;
+          line-height: 2.7rem;
+        }
+      }
+      .title-h1 {
+        font-weight: 900;
+        font-size: 3rem;
+        padding-bottom: 15.7rem;
+        line-height: 3.3rem;
+        @include respond-to("small") {
+          font-size: 4.5rem;
+          line-height: 4.9rem;
+          padding-bottom: 18.7rem;
+        }
+        @include respond-to("medium") {
+          font-size: 4.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../mixins.scss";
+
+.footer-wraper {
+   background-color: #fff;
+   max-width: 33.6rem;
+   padding-top: 5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+}
+.payments {
+   margin-bottom: 5rem;
+   order: 5 ;
+}

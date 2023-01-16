@@ -1,0 +1,91 @@
+@import "../mixins.scss";
+
+.form_wraper {
+  font-family: "Montserrat";
+  max-width: 336px;
+  background: #ffffff;
+  box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 100;
+  top: 43.2rem;
+  left: calc(50% - 17rem);
+
+  @include respond-to("small") {
+    max-width: 368px;
+    top: 50.2rem;
+  }
+  @include respond-to("medium") {
+    top: 3.6rem;
+    left: 97rem
+  }
+
+  .form_title {
+    @include pfontz(Montserrat, 2.3rem, #313131, 700, 2.8rem);
+    background-color: #efefef;
+    text-align: center;
+    border-radius: 0.8rem 0.8rem 0 0;
+    padding: 1.05rem 0 1.05rem 0;
+  }
+  .form {
+    position: relative;
+    padding: 1.3rem 1.5rem 2rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  form label {
+    @include pfontz(Montserrat, 1.5rem, #313131, 300, 1.8rem);
+    text-align: left;
+    margin-bottom: 0.4rem;
+  }
+  .form input {
+    border: 1px solid #b4b3b3;
+    height: 3.1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.6rem;
+    padding: 0px 0.6rem;
+  }
+  input::placeholder {
+    @include pfontz(Montserrat, 1.3rem, #b1b1b1, 300, 1.6rem);
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  .castom-checkbox + label {
+    @include pfontz(Montserrat, 1.2rem, #6d6d6d, 400, 1.6rem);
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .castom-checkbox + label::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 1rem;
+  }
+  .castom-checkbox:checked + label::before {
+    background-image: url("./img/checkboxIcon.svg");
+    background-position: 0.4rem;
+    background-repeat: no-repeat;
+    background-color: #313131;
+  }
+
+  .container-payment-methods {
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0.8rem 0.8rem;
+    padding: 1.25rem 0;
+  }
+}
+.form_wraper > p {
+  @include pfontz(Montserrat, 1.3rem, #6d6d6d, 400, 1.56rem);
+  margin-bottom: 1.3rem;
+  text-align: center;
+  padding: 0 2.5rem 0 2.5rem;
+}

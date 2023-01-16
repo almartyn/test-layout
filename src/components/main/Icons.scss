@@ -1,0 +1,78 @@
+@import "../mixins.scss";
+
+.icons_container {
+  background-color: #ececec;
+}
+.icons_container::after{
+   content: "";
+   position: absolute;
+   left: calc(50% - 20px);
+   border: 2rem solid transparent; 
+   border-top: 2rem solid #ececec;
+   z-index: 20;
+}
+.icons_block {
+  max-width: 336px;
+  margin: 0 auto;
+  font-family: Montserrat;
+  @include respond-to("small") {
+    max-width: 750px;
+  }
+}
+.icons_block-title {
+  @include pfontz("Montserrat", 2.5rem, #000000, 900, 2.8rem);
+  text-align: center;
+  padding-top: 4rem;
+  @include respond-to("small") {
+    margin-bottom: 4rem;
+  }
+  @include respond-to("small") {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+}
+.icons_block-items {
+  max-width: 750px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  @include respond-to("small") {
+    flex-direction: row;
+    align-items:flex-start;
+    gap: 4rem;
+  }
+}
+.items {
+   display: flex;
+   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.items:first-child {
+  padding-top: 4rem;
+  @include respond-to("small") {
+    padding-top: 0;
+  }
+}
+.item {
+   width: 103px;
+   height: 103px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid #fff;
+   background-color: #343434;
+   margin-bottom: 16px;
+}
+.items:last-child {
+   margin-bottom: 6.2rem;
+}
+.item-paragraph {
+   text-align: center;
+   @include pfontz("Montserrat", 1.8rem, #000000, 500, 2.3rem);
+
+}
