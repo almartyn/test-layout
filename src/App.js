@@ -4,7 +4,7 @@ import TitleArrow from "./components/header/TitleArrow";
 import Icons from "./components/main/Icons";
 import Main from "./components/main/Main";
 import Form from "./components/UI/Form";
-import "./reset.css";
+import "./App.scss";
 
 const App = () => {
   return (

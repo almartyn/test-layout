@@ -1,4 +1,4 @@
-import "./Icons.css";
+import "./Icons.scss";
 import Card from "../UI/Card";
 import icon1 from "./img/icon1.svg";
 

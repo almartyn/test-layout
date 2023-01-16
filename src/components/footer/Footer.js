@@ -1,6 +1,6 @@
 import Button from "../UI/Button";
 import Card from "../UI/Card";
-import "./Footer.css";
+import "./Footer.scss";
 import img from "./img/Button-Payments.jpg"
 
 

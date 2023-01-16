@@ -1,4 +1,4 @@
-import "./SubmitButton.css";
+import "./SubmitButton.scss";
 
 const SubmitButton = (props) => {
    return(

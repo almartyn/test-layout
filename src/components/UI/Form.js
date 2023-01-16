@@ -1,10 +1,11 @@
-import "./Form.css";
+import "./Form.scss";
 import SubmitButton from "./SubmitButton";
 import img from "./img/payment-methods-grey.png";
 
-const Form = () => {
+const Form = (props) => {
+ 
   return (
-    <div className="form_wraper">
+    <div id="scrollTo" className="form_wraper">
       <h2 className="form_title"> Lorem ipsum </h2>
       <form className="form">
         <label htmlFor="firstName">First Name</label>
