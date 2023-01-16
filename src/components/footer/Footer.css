@@ -1,0 +1,12 @@
+.footer-wraper {
+   background-color: #fff;
+   max-width: 336px;
+   padding-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+}
+.payments {
+   margin-bottom: 50px;
+}
